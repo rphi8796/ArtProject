@@ -14,6 +14,7 @@
 		5E354F23218B735C00F82DD1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E354F21218B735C00F82DD1 /* LaunchScreen.storyboard */; };
 		5E354F2E218B7D1300F82DD1 /* ArtView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E354F2D218B7D1300F82DD1 /* ArtView.swift */; };
 		5E8F27D021937207003EC13F /* ArtCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8F27CF21937207003EC13F /* ArtCollectionViewController.swift */; };
+		5E8F27D22193821E003EC13F /* ArtCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8F27D12193821E003EC13F /* ArtCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		5E354F24218B735C00F82DD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5E354F2D218B7D1300F82DD1 /* ArtView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtView.swift; sourceTree = "<group>"; };
 		5E8F27CF21937207003EC13F /* ArtCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtCollectionViewController.swift; sourceTree = "<group>"; };
+		5E8F27D12193821E003EC13F /* ArtCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 				5E354F1C218B735B00F82DD1 /* Main.storyboard */,
 				5E354F21218B735C00F82DD1 /* LaunchScreen.storyboard */,
 				5E354F2D218B7D1300F82DD1 /* ArtView.swift */,
+				5E8F27D12193821E003EC13F /* ArtCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -167,6 +170,7 @@
 			files = (
 				5E354F1B218B735B00F82DD1 /* ArtViewController.swift in Sources */,
 				5E354F2E218B7D1300F82DD1 /* ArtView.swift in Sources */,
+				5E8F27D22193821E003EC13F /* ArtCell.swift in Sources */,
 				5E8F27D021937207003EC13F /* ArtCollectionViewController.swift in Sources */,
 				5E354F19218B735B00F82DD1 /* AppDelegate.swift in Sources */,
 			);
