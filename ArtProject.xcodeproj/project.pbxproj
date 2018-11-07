@@ -13,6 +13,7 @@
 		5E354F20218B735C00F82DD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E354F1F218B735C00F82DD1 /* Assets.xcassets */; };
 		5E354F23218B735C00F82DD1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E354F21218B735C00F82DD1 /* LaunchScreen.storyboard */; };
 		5E354F2E218B7D1300F82DD1 /* ArtView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E354F2D218B7D1300F82DD1 /* ArtView.swift */; };
+		5E8F27D021937207003EC13F /* ArtCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8F27CF21937207003EC13F /* ArtCollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		5E354F22218B735C00F82DD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5E354F24218B735C00F82DD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5E354F2D218B7D1300F82DD1 /* ArtView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtView.swift; sourceTree = "<group>"; };
+		5E8F27CF21937207003EC13F /* ArtCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtCollectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +58,9 @@
 		5E354F17218B735B00F82DD1 /* ArtProject */ = {
 			isa = PBXGroup;
 			children = (
-				5E354F2C218B73B400F82DD1 /* View */,
 				5E354F2B218B73AD00F82DD1 /* Resources */,
 				5E354F2A218B73A200F82DD1 /* Controller */,
+				5E354F2C218B73B400F82DD1 /* View */,
 			);
 			path = ArtProject;
 			sourceTree = "<group>";
@@ -67,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				5E354F1A218B735B00F82DD1 /* ArtViewController.swift */,
+				5E8F27CF21937207003EC13F /* ArtCollectionViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -164,6 +167,7 @@
 			files = (
 				5E354F1B218B735B00F82DD1 /* ArtViewController.swift in Sources */,
 				5E354F2E218B7D1300F82DD1 /* ArtView.swift in Sources */,
+				5E8F27D021937207003EC13F /* ArtCollectionViewController.swift in Sources */,
 				5E354F19218B735B00F82DD1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
