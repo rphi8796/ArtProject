@@ -23,7 +23,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Change Screen"/>
                                 <connections>
-                                    <segue destination="zbY-8j-rnx" kind="show" id="b4i-Zd-YcC"/>
+                                    <segue destination="zbY-8j-rnx" kind="show" id="IwG-4N-5la"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ELe-R7-nWw" customClass="ArtView" customModule="ArtProject" customModuleProvider="target">
@@ -38,7 +38,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="117.59999999999999" y="118.22660098522168"/>
+            <point key="canvasLocation" x="-401" y="117"/>
         </scene>
         <!--Art Collection View Controller-->
         <scene sceneID="mJX-gu-soc">
@@ -77,9 +77,8 @@
                                 </view>
                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <connections>
-                                    <outlet property="ArtImage" destination="CmM-sv-UJ9" id="rBI-ST-xvF"/>
-                                    <outlet property="ArtLabel" destination="ENk-T4-i7l" id="dCN-KE-c8T"/>
-                                    <outletCollection property="Art" destination="CmM-sv-UJ9" id="83T-q6-0QI"/>
+                                    <outlet property="artImage" destination="CmM-sv-UJ9" id="DJ3-jd-oDs"/>
+                                    <outlet property="artLabel" destination="ENk-T4-i7l" id="Ls2-Fz-THc"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>

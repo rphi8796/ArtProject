@@ -10,6 +10,6 @@ import UIKit
 
 class ArtCell: UICollectionViewCell
 {
-    @IBOutlet weak var ArtLabel: UILabel!
-    @IBOutlet weak var ArtImage: UIImageView!
+    @IBOutlet weak var artLabel: UILabel!
+    @IBOutlet weak var artImage: UIImageView!
 }

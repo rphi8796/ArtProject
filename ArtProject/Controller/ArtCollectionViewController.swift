@@ -45,63 +45,47 @@ public class ArtCollectionViewController: UICollectionViewController
         ]
     }()
     
+    
+    
+    //MARK: - Lifecycle
+    
     public override func viewDidLoad() -> Void
     {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Register cell classes
-        self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
-
-        // Do any additional setup after loading the view.
+        
+        // Do any additional setup after loading view
     }
-
-    public override func didReceiveMemoryWarning() -> Void
-    {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using [segue destinationViewController].
-        // Pass the selected object to the new view controller.
-    }
-    */
-
-    // MARK: UICollectionViewDataSource
+    
+    
+    // Mark: - Navigation / Layout
 
     public override func numberOfSections(in collectionView: UICollectionView) -> Int
     {
-        // #warning Incomplete implementation, return the number of sections
         return 1
     }
-
-
-    public override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int
+    
+    
+    public override func collectionView(_ collectionView: UICollectionView,  numberOfItemsInSection section: Int) -> Int
     {
-        // #warning Incomplete implementation, return the number of items
         return creativeCS.count
     }
+    
+    
+    // MARK: UICollectionViewDataSource
 
     public override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell
     {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
+        let artCell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! ArtCell
     
-        // Configure the cell
+        artCell.backgroundColor = .green
+        artCell.artImage.image = creativeCS[indexPath.row]
+        artCell.artLabel.text = labels[indexPath.row]
     
-        return cell
+        return artCell
     }
 
-    // MARK: UICollectionViewDelegate
-
     
-    // Uncomment this method to specify if the specified item should be highlighted during tracking
+    // MARK: UICollectionViewDelegate
     
     public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize
     {
@@ -112,7 +96,7 @@ public class ArtCollectionViewController: UICollectionViewController
         return CGSize(width: widthPerItem, height: widthPerItem)
     }
    
-    // Uncomment this method to specify if the specified item should be selected
+    
     public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets
     {
         return sectionInsets
@@ -123,32 +107,5 @@ public class ArtCollectionViewController: UICollectionViewController
     {
         return sectionInsets.left
     }
-
-
-    /*
-    // Uncomment this method to specify if the specified item should be selected
-    override func collectionView(_ collectionView: UICollectionView, shouldSelectItemAt indexPath: IndexPath) -> Bool
-    {
-        return true
-    }
-    */
-
-    /*
-    // Uncomment these methods to specify if an action menu should be displayed for the specified item, and react to actions performed on the item
-    override func collectionView(_ collectionView: UICollectionView, shouldShowMenuForItemAt indexPath: IndexPath) -> Bool
-    {
-        return false
-    }
-
-    override func collectionView(_ collectionView: UICollectionView, canPerformAction action: Selector, forItemAt indexPath: IndexPath, withSender sender: Any?) -> Bool
-    {
-        return false
-    }
-
-    override func collectionView(_ collectionView: UICollectionView, performAction action: Selector, forItemAt indexPath: IndexPath, withSender sender: Any?)
-    {
-    
-    }
-    */
 
 }
