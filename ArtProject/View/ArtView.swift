@@ -17,8 +17,6 @@ public class ArtView: UIView
     public override func draw(_ rect: CGRect) -> Void
     {
         // Drawing code
-        createStrickFigure().stroke()
-        drawTurtle()
         drawPentagon()
     }
     
@@ -27,7 +25,7 @@ public class ArtView: UIView
     {
         let figure : UIBezierPath = UIBezierPath()
         
-        UIColor.init(red: CGFloat(176), green: CGFloat(224), blue: CGFloat(230), alpha: CGFloat(100)).setStroke()
+        UIColor.init(red: CGFloat(17), green: CGFloat(22), blue: CGFloat(23), alpha: CGFloat(100)).setStroke()
        
         figure.lineWidth = 3.0
         
@@ -52,7 +50,7 @@ public class ArtView: UIView
     private func drawTurtle() -> Void
     {
         let logo = UIBezierPath()
-        UIColor.init(red: CGFloat(176), green: CGFloat(224), blue: CGFloat(230), alpha: CGFloat(100)).setFill()
+        UIColor.init(red: CGFloat(17), green: CGFloat(22), blue: CGFloat(23), alpha: CGFloat(100)).setFill()
         logo.move(to: CGPoint(x: 50, y: 250))
         logo.addLine(to: CGPoint(x: 100, y: 300))
         logo.addLine(to: CGPoint(x: 50, y: 350))
@@ -62,11 +60,12 @@ public class ArtView: UIView
     
     private func drawPentagon() -> Void
     {
+        let pi = 3.141592663689793
         let logo = UIBezierPath()
-        UIColor.init(red: CGFloat(176), green: CGFloat(224), blue: CGFloat(230), alpha: CGFloat(100))
-        logo.move(to: CGPoint(x: 200, y: 30))
-        logo.addLine(to: CGPoint(x: 150, y: 30))
-        logo.addLine(to: CGPoint(x: 242.55, y: 285))
+        UIColor.purple.setFill()
+        logo.move(to: CGPoint(x: 150, y: 350))
+        logo.addArc(withCenter: CGPoint(x: 150, y: 350), radius: CGFloat(145), startAngle: CGFloat(0), endAngle: CGFloat(pi * 2), clockwise: true)
+        logo.fill()
     }
 
 }
